@@ -1,5 +1,6 @@
 package com.example.finalproject_mad3125;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void showAlert() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Login Error");
+        alertDialogBuilder.setMessage("Invalid Email Id and Password");
+
     }
 
 
