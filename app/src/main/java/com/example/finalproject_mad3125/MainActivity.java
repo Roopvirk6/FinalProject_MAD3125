@@ -61,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        alertDialogBuilder.setNegativeButton("Cancle", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+
+
 
     }
 
