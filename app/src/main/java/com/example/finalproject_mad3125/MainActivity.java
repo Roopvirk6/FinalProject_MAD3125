@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        AlertDialog nAlertDialog = alertDialogBuilder.create();
+        nAlertDialog.show();
+
+
 
 
 
