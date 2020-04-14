@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 if (editText1.getText().toString().equals("user@gmail.com") &&
                         edtPassword.getText().toString().equals("text"))
                 {
-                    Intent i = new Intent(MainActivity.this, .class);
+                    Intent i = new Intent(MainActivity.this,CustomerListActivity.class);
                     startActivity(i);
                 }
                 else
@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    
+
 
 }
