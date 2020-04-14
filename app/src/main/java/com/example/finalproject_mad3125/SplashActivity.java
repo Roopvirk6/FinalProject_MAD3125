@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private final int duration = 3000;
     TextView textView1;
     ImageView imageView1;
 
@@ -17,6 +18,6 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         textView1 = (TextView)findViewById(R.id.textView1);
         imageView1 = (ImageView)findViewById(R.id.imageView1);
-        
+
     }
 }
