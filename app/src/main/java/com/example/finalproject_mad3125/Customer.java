@@ -80,6 +80,11 @@ public class Customer implements Parcelable
         this.custImage = custImage;
     }
 
+    public Customer()
+    {
+
+    }
+
     @Override
     public int describeContents() {
         return 0;
