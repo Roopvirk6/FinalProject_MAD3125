@@ -21,7 +21,18 @@ public class Customer implements Parcelable
     private String customerEmailAddress;
     private int amount;
     private int custImage;
+
+    public Customer(int customerId,
+                  String customerFirstName, String customerLastName, String customerEmailAddress,int amount, int custImage) {
+        this.customerId=customerId;
+        this.customerFirstName=customerFirstName;
+        this.customerLastName=customerLastName;
+        this.customerEmailAddress=customerEmailAddress;
+        this.amount=amount;
+        this.custImage=custImage;
+    }
     
+
 
 
     @Override
