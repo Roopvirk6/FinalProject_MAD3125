@@ -1,4 +1,4 @@
-package com.example.finalproject_mad3125.ui.slideshow;
+package com.example.finalproject_mad3125.ui.Logout;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

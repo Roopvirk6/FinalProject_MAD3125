@@ -1,4 +1,4 @@
-package com.example.finalproject_mad3125.ui.gallery;
+package com.example.finalproject_mad3125.ui.AddCustomer;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
