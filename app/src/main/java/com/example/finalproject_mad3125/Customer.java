@@ -3,17 +3,11 @@ package com.example.finalproject_mad3125;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Customer implements Parcelable
-{
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
-        public Customer createFromParcel(Parcel in) {
-            return new Customer(in);
-        }
+import java.io.Serializable;
 
-        public Customer[] newArray(int size) {
-            return new Customer[size];
-        }
-    };
+public class Customer implements Serializable
+{
+
 
     private int customerId;
     private String customerFirstName;
@@ -21,6 +15,10 @@ public class Customer implements Parcelable
     private String customerEmailAddress;
     private int amount;
     private int custImage;
+    private Bill bill;
+    private String billType;
+
+    
 
     public Customer(int customerId,
                   String customerFirstName, String customerLastName, String customerEmailAddress,int amount, int custImage) {
