@@ -27,7 +27,7 @@ public class Customer implements Serializable
     }
 
     public String getBillType() {
-        billType=Bill.getVType();
+        billType=bill.getBillType();
 
         return billType;
     }

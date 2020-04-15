@@ -54,6 +54,11 @@ public abstract class Bill implements Serializable
         this.billAmount = billAmount;
     }
 
-    
+    public abstract void Bill();
+
+    public void printMyData()
+    {
+
+    }
 
 }
