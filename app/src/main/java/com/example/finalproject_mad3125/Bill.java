@@ -1,6 +1,8 @@
 package com.example.finalproject_mad3125;
 
-public class Bill
-{
+import java.io.Serializable;
 
+public abstract class Bill implements Serializable
+{
+    
 }

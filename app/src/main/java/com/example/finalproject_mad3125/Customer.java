@@ -18,17 +18,41 @@ public class Customer implements Serializable
     private Bill bill;
     private String billType;
 
-    
+    public Bill getBill() {
+        return bill;
+    }
+
+    public void setBill(Bill bill) {
+        this.bill = bill;
+    }
+
+    public String getBillType() {
+        billType=Bill.getVType();
+
+        return billType;
+    }
+
+    public void setBillType(String billType) {
+        this.billType = billType;
+    }
+
+
+    public Customer()
+    {
+
+    }
 
     public Customer(int customerId,
-                  String customerFirstName, String customerLastName, String customerEmailAddress,int amount, int custImage) {
+                    String customerFirstName, String customerLastName, String customerEmailAddress, int amount, int custImage, String billType) {
         this.customerId=customerId;
         this.customerFirstName=customerFirstName;
         this.customerLastName=customerLastName;
         this.customerEmailAddress=customerEmailAddress;
         this.amount=amount;
         this.custImage=custImage;
+        this.billType = billType;
     }
+
 
     public int getCustomerId() {
         return customerId;
@@ -78,42 +102,12 @@ public class Customer implements Serializable
         this.custImage = custImage;
     }
 
-    public Customer()
+    public void printMyData()
     {
 
     }
-    // Parcelling part
-    public Customer(Parcel in){
-        this.customerId = in.readInt();
-        this.customerFirstName = in.readString();
-        this.customerLastName = in.readString();
-        this.customerEmailAddress = in.readString();
-        this.amount = in.readInt();
-    }
 
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.customerId);
-        dest.writeString(this.customerFirstName);
-        dest.writeString(this.customerLastName);
-        dest.writeString(this.customerEmailAddress);
-        dest.writeInt(this.amount);
-
-    }
-    @Override
-    public String toString() {
-        return "Customer Name='" + customerFirstName + '\n' +
-                "Customer Id='" + customerId + '\n' +
-                "Bill Amount ='" + amount + '\n' +
-                "Customer email = '" + customerEmailAddress + '\n' +
-                "Customer last name = '" + customerLastName + '\n'
-                ;
-    }
 
 }
