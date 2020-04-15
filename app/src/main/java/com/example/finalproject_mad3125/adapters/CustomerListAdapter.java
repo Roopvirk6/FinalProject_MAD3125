@@ -33,8 +33,8 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
         @Override
         public void onBindViewHolder(@NonNull CountryViewHolder holder, final int position) {
             Customer mCountry = this.placeList.get(position);
-            holder.txtname.setText(mCountry.getPlaceName());
-            holder.imgflag.setImageResource(mCountry.getPlaceImage());
+            holder.txtname.setText(mCountry.getCustomerFirstName());
+            holder.imgflag.setImageResource(mCountry.getCustImage());
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
