@@ -31,9 +31,54 @@ public class Customer implements Parcelable
         this.amount=amount;
         this.custImage=custImage;
     }
-    
 
+    public int getCustomerId() {
+        return customerId;
+    }
 
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getCustomerFirstName() {
+        return customerFirstName;
+    }
+
+    public void setCustomerFirstName(String customerFirstName) {
+        this.customerFirstName = customerFirstName;
+    }
+
+    public String getCustomerLastName() {
+        return customerLastName;
+    }
+
+    public void setCustomerLastName(String customerLastName) {
+        this.customerLastName = customerLastName;
+    }
+
+    public String getCustomerEmailAddress() {
+        return customerEmailAddress;
+    }
+
+    public void setCustomerEmailAddress(String customerEmailAddress) {
+        this.customerEmailAddress = customerEmailAddress;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public int getCustImage() {
+        return custImage;
+    }
+
+    public void setCustImage(int custImage) {
+        this.custImage = custImage;
+    }
 
     @Override
     public int describeContents() {
