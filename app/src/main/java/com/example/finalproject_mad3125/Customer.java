@@ -15,6 +15,14 @@ public class Customer implements Parcelable
         }
     };
 
+    private int customerId;
+    private String customerFirstName;
+    private String customerLastName;
+    private String customerEmailAddress;
+    private int amount;
+    private int custImage;
+    
+
 
     @Override
     public int describeContents() {
