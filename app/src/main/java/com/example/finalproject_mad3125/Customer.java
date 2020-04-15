@@ -84,6 +84,15 @@ public class Customer implements Parcelable
     {
 
     }
+    // Parcelling part
+    public Customer(Parcel in){
+        this.customerId = in.readInt();
+        this.customerFirstName = in.readString();
+        this.customerLastName = in.readString();
+        this.customerEmailAddress = in.readString();
+        this.amount = in.readInt();
+    }
+
 
     @Override
     public int describeContents() {
@@ -92,6 +101,21 @@ public class Customer implements Parcelable
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.customerId);
+        dest.writeString(this.customerFirstName);
+        dest.writeString(this.customerLastName);
+        dest.writeString(this.customerEmailAddress);
+        dest.writeInt(this.amount);
 
     }
+    @Override
+    public String toString() {
+        return "Customer Name='" + customerFirstName + '\n' +
+                "Customer Id='" + customerId + '\n' +
+                "Bill Amount ='" + amount + '\n' +
+                "Customer email = '" + customerEmailAddress + '\n' +
+                "Customer last name = '" + customerLastName + '\n'
+                ;
+    }
+
 }
