@@ -14,11 +14,11 @@ public abstract class Bill implements Serializable
 
     }
 
-    public Bill(int billID, String billDate, String billType,double billAmount)
+    public Bill(int billID, String billDate, String BType,double billAmount)
     {
         this.billID = billID;
         this.billDate = billDate;
-        this.billType = billType;
+        this.billType = BType;
         this.billAmount = billAmount;
     }
 
