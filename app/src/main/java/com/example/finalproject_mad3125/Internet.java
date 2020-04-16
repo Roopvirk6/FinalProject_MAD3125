@@ -1,4 +1,9 @@
 package com.example.finalproject_mad3125;
 
-public class Internet {
+import java.io.Serializable;
+
+public class Internet extends Bill implements Serializable {
+    
+
+
 }
