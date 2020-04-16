@@ -35,5 +35,21 @@ public class Hydro extends Bill implements Serializable
         this.unitConsumed = unitConsumed;
     }
 
-    
+    public void Bill()
+    {
+
+    }
+
+    @Override
+    public void printMyData()
+    {
+        System.out.println("Customer has a Hydro bill ");
+        System.out.println("\t:Bill ID:          " + getBillID());
+        System.out.println("\tBill Date:   " + getBillDate());
+        System.out.println("\tBill Type:           " + getBillType());
+        System.out.println("\tBill Amount:" + getBillAmount());
+        System.out.println("\tAgency Name:     " + getAgencyName());
+        System.out.println("\tUnits Consumed:        " + getUnitConsumed());
+
+    }
 }
