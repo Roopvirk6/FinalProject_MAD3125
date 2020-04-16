@@ -71,6 +71,20 @@ public class Mobile extends Bill implements Serializable
 
     }
 
-    
+    @Override
+    public void printMyData()
+    {
+        System.out.println("Customer has a Mobile bill ");
+        System.out.println("\t:Bill ID:          " + getBillID());
+        System.out.println("\tBill Date:   " + getBillDate());
+        System.out.println("\tBill Type:           " + getBillType());
+        System.out.println("\tBill Amount:" + getBillAmount());
+        System.out.println("\tManufacturer Name:     " + getManufacturerName());
+        System.out.println("\tPlan Name:        " + getPlanName());
+        System.out.println("\tInternet GB Used:   "+ getInternetGBUesd());
+        System.out.println("\tMinutes Used:       " + getMinutes());
+        System.out.println("\tMobile Number:       " + getMobileNumber());
+
+    }
 
 }
