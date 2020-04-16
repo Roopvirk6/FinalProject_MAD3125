@@ -10,5 +10,7 @@ public class Singleton
     private Singleton()
     {
         arrayListCustomer = new ArrayList<>();
+        Customer c1 = new Customer(1,"roop","virk","roop@gmail.com",1000,,"mobile");
+        
     }
 }
