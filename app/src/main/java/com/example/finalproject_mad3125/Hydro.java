@@ -19,6 +19,21 @@ public class Hydro extends Bill implements Serializable
         this.unitConsumed = unitConsumed;
     }
 
-    
+    public String getAgencyName() {
+        return agencyName;
+    }
 
+    public void setAgencyName(String agencyName) {
+        this.agencyName = agencyName;
+    }
+
+    public String getUnitConsumed() {
+        return unitConsumed;
+    }
+
+    public void setUnitConsumed(String unitConsumed) {
+        this.unitConsumed = unitConsumed;
+    }
+
+    
 }
