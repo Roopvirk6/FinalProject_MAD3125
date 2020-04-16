@@ -49,7 +49,7 @@ public class Hydro extends Bill implements Serializable
         System.out.println("\tBill Type:           " + getBillType());
         System.out.println("\tBill Amount:" + getBillAmount());
         System.out.println("\tAgency Name:     " + getAgencyName());
-        System.out.println("\tUnits Consumed:        " + getUnitConsumed());
+        System.out.println("\tUnits Consumed:   " + getUnitConsumed());
 
     }
 }
