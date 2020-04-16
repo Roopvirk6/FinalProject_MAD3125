@@ -43,8 +43,8 @@ public class Internet extends Bill implements Serializable {
         public void printMyData()
         {
             System.out.println("Customer has a mobile bill of ");
-            System.out.println("\tBILL ID:           " + getBillID());
-            System.out.println("\tBILL TYPE:   " + getBillType());
+            System.out.println("\tBill ID:           " + getBillID());
+            System.out.println("\tBill Type:   " + getBillType());
             System.out.println("\tBill Date:           " + getBillDate());
             System.out.println("\tBill Amount:  " + getBillAmount());
             System.out.println("\tProvider Name:      " + getProviderName());
