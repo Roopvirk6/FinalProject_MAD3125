@@ -9,6 +9,6 @@ public class Singleton
     ArrayList<Customer> arrayListCustomer = new ArrayList<>();
     private Singleton()
     {
-        
+        arrayListCustomer = new ArrayList<>();
     }
 }
