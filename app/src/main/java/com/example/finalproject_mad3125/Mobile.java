@@ -66,6 +66,11 @@ public class Mobile extends Bill implements Serializable
         this.minutes = minutes;
     }
 
+    public void Bill()
+    {
+
+    }
 
     
+
 }
